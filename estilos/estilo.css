@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: url(../multimedia/real-estate-6688945_1280.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+/*BARRA DE NAVEGACION*/
+#th-titulo{
+    padding: 30px;     
+    position: sticky;
+    top: 0px;
+    text-shadow: 1px 1px #fff;
+    background-color: #5c53465b;
+}
+
+#th-titulo a{
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#nav-deco a{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px;
+    margin: 10px;
+}
+
+#nav-deco a:hover{
+    text-decoration: underline;    
+}
+
+
+/*IMAGENES*/
+.img-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.img-container img{
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20%;
+    border: solid 3px;
+    transition: transform 0.5s;
+}
+
+.img-container img:hover{
+    transform: scale(1.1);
+}
+
+/*LINK PARA INSTAGRAM*/
+
+.link-ig{
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    margin: 0 auto;    
+    width: 500px;
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 300%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link-ig:hover{
+    background-color: #fff;
+    color: #000;
+    border: #000 solid 3px;
+}
+
+/*MAPA GUIA*/
+.map-container{
+    margin-top: 150px;    
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.map-container p{
+    font-size: 150%;
+    margin-bottom: 60px;
+    color: #000;
+    font-weight: bold;
+    text-shadow: 1px 1px #fff;
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+.footer{
+    width: 100%;
+    background-color: #5c53465b;
+    margin-top: 150px;
+}
+
+.footer .caja-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .caja-1 .caja h2{
+    color: #000;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-shadow: 1px 1px #fff;
+}
+
+.footer .caja-1 .caja em{
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #fff;
+}
+
+.footer .caja-1 .redes a{
+    text-decoration: none;
+}
+
+.footer .caja-1 .redes i{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #000;
+    margin-right: 5px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+.footer .caja-1 .redes i:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 300ms ease;
+}
+
+.footer .caja-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+/* PAGINA PRODUCTOS */
+
+.titulo{
+    margin-top: 150px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 1px 1px #fff;
+}
+
+.venta-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(400px, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.fotos-container{
+    width: 300px;
+    height: 45vh;
+    background-color: #fff;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;       
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.venta-container img{
+    width: 80%;
+    height: 50%;
+}
+
+.venta-container p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.venta-container span{
+    font-weight: bold;
+}
+
+.venta-container #btn-compra{
+    margin-top: -15px;
+    padding: 5px;
+    cursor: pointer;
+}
