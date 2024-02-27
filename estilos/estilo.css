@@ -177,8 +177,8 @@ body{
 
 .venta-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(400px, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-auto-rows: minmax(400px, auto);
     justify-items: center;
     align-items: center;
     gap: 20px;
