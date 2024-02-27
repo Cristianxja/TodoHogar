@@ -12,13 +12,17 @@ body{
 }
 
 /*BARRA DE NAVEGACION*/
-#th-titulo{
-    padding: 30px;     
-    position: sticky;
+
+#th-titulo {
+    width: 100%;    
+    background-color: #5c53465b;    
+    padding: 30px;
+    position: fixed;
     top: 0px;
     text-shadow: 1px 1px #fff;
-    background-color: #5c53465b;
 }
+
+
 
 #th-titulo a{
     color: #000;
@@ -31,7 +35,6 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     padding: 15px;
-    margin: 10px;
 }
 
 #nav-deco a:hover{
@@ -42,6 +45,7 @@ body{
 /*IMAGENES*/
 .img-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     margin-top: 150px;
@@ -59,6 +63,21 @@ body{
 
 .img-container img:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 715px) {
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container img{
+        margin-top: 20px;
+        transition: transform 0.5s;
+    }
+
+    
 }
 
 /*LINK PARA INSTAGRAM*/
@@ -84,6 +103,14 @@ body{
     border: #000 solid 3px;
 }
 
+@media screen and (max-width: 715px){
+    .link-ig{
+        width: 250px;
+        height: 100px;
+        font-size: 150%;
+    }
+}
+
 /*MAPA GUIA*/
 .map-container{
     margin-top: 150px;    
@@ -100,11 +127,24 @@ body{
     text-decoration: underline;
 }
 
+@media screen and (max-width: 715px){
+    .map-container iframe {
+        width: 300px;
+        height: 225px;
+    }
+
+    .map-container p {
+        font-size: 75%;
+    }
+}
+
 /*FOOTER*/
 .footer{
     width: 100%;
     background-color: #5c53465b;
+    padding: 20px;
     margin-top: 150px;
+    position: relative;
 }
 
 .footer .caja-1{
@@ -163,6 +203,21 @@ body{
     color: #000;
     font-size: 15px;
     text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 715px){
+    .footer .caja-1{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 555px){
+    .footer .caja-1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
 }
 
 /* PAGINA PRODUCTOS */
