@@ -41,6 +41,12 @@ body{
     text-decoration: underline;    
 }
 
+@media screen and (max-width: 535px) {
+    #th-titulo a{
+        font-size: 25px;
+    }
+
+}
 
 /*IMAGENES*/
 .img-container{
@@ -67,12 +73,14 @@ body{
 
 @media screen and (max-width: 715px) {
     .img-container {
+        margin-top: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .img-container img{
+        width: 30%;
         margin-top: 20px;
         transition: transform 0.5s;
     }
@@ -134,7 +142,7 @@ body{
     }
 
     .map-container p {
-        font-size: 75%;
+        font-size: 100%;
     }
 }
 
@@ -271,4 +279,11 @@ body{
     margin-top: -15px;
     padding: 5px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 715px){
+    .titulo{
+        margin-top: 150px;
+    }
 }
